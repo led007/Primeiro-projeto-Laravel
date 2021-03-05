@@ -5,11 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Produtos extends Model
+class Clientes extends Model
 {
     use HasFactory;
-    public static function listaProdutos(){
-       return  $lista_produtos = Produtos::get();
+    public static function listaClientes() {
+        return $lista_clientes = Clientes::all();
     }
-        
 }
